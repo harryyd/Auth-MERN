@@ -1,0 +1,12 @@
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the spinner buttons for Firefox */
+.no-spinner {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Standard */
+  /* color : orange ; */
+}
