@@ -4,10 +4,6 @@ const nodemailer = require("nodemailer");
 const jwt = require("jsonwebtoken");
 const otp = require("../utils/otpGenrator")
 
-// const passwordResetEmail = require("../utils/mails.js") ; 
-
-
-
 const mail = async ({ res, email, otpdata }) => {
     try {
 
@@ -461,19 +457,6 @@ exports.alternate = async(req ,res) => {
         id : id
     })
 }
-// exports.test = (req, res) => {
-//     try {
-
-//         res.cookie("test" , "randi ke jaam " ,{ maxAge: 900000, secure: false })
-//         return res.status(200).json({
-//             message: "this is test",
-//             data : "hello zanka no taachi "
-//         })
-
-//     } catch (error) {
-//         return res.status(500).json({ message: "problem in test", error: error.message })
-//     }
-// }
 
 
 
